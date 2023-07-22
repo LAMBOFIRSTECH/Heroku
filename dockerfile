@@ -5,7 +5,8 @@ COPY source.list /etc/apt/sources.list
 RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y nano && \
-    apt-get install -y git 
+    apt-get install -y git
 RUN rm -rf /usr/share/nginx/html/*
+RUN rm -rf /var/cache/apt/*
 RUN git clone https://github.com/LAMBOFIRSTECH/Heroku.git /usr/share/nginx/html
 CMD sed -i -e 's/${NGINX_EXTERNAL_PORT}/${NGINX_INTERNAL_PORT}/g' /etc/nginx/conf.d/default.conf && nginx -g 'daemon off;'
