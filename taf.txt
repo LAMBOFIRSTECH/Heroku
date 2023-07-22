@@ -1,2 +1,2 @@
 ### Faudrait que je sois en mesure d'ajouter une configuration dans /usr/lib/nginx/html du conteneur docker.
-Lorsque je fais un git mrg sur la branche master ou main.
+Lorsque je fais un git mrg sur la branche master ou main. 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
