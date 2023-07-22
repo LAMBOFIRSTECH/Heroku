@@ -5,9 +5,14 @@ On pourra faire du CI/CD
 # Slack
 Notification pour chaque intégration de code.
 # Web Server
-On pourra créer un serveur web NGINX qui écoute sur le port 8093.
+On pourra créer un serveur web NGINX qui écoute sur le port 8095.
 
-- [ ] A
-- [x] B
-- [ ] C
+# Taches réalisées 
+- [X] Configuration de Heroku 
+- [ ] Configuration de Jenkins
+    - [X] Mise en relief avec les dépots GitHub
+    - [X] Mise en relief avec le cloud Heroku
+    - [ ] Mise en relief avec slack
+- [ ] Configuration de Slack
+- [X] Configuration du serveur NGINX
 
