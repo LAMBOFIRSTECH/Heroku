@@ -7,7 +7,7 @@ Notification pour chaque intégration de code.
 # Web Server
 On pourra créer un serveur web NGINX qui écoute sur le port 8093.
 
-[] A
-[x] B
-[ ] C
+- [ ] A
+- [x] B
+- [ ] C
 
