@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('show files') {
             steps {
-                sh 'cd totodir && ls '
+                sh 'ls '
      
             }
         }
         stage('create file') {
             steps {
-                sh 'cd totodir && touch noyaux'
+                sh 'mkdir lab0 && touch web_site.html'
             }
         }
     }
