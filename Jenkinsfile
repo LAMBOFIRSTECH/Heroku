@@ -8,9 +8,15 @@ pipeline {
      
             }
         }
-        stage('create file') {
+        stage('create folder') {
             steps {
-                sh 'mkdir lab0 && touch web_site.html'
+                sh 'mkdir lab0 '
+            }
+        }
+
+        stage('create file') {
+             steps {
+                 sh 'mkdir lab0 && touch web_site.html'
             }
         }
     }
