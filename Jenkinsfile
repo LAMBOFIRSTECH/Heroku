@@ -19,5 +19,10 @@ pipeline {
                  sh 'cd lab0/ && touch web_site.html' 
             }
         }
+        stage("creation de l'image docker") {
+             steps {
+                 sh 'docker build -t nginx .' 
+            }
+        }
     }
 }
