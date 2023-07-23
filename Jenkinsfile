@@ -16,7 +16,7 @@ pipeline {
 
         stage('create file') {
              steps {
-                 sh 'mkdir lab0 && touch web_site.html'
+                 sh 'cd lab0/ && touch web_site.html' 
             }
         }
     }
