@@ -32,12 +32,12 @@ pipeline {
         }
         stage("Installation de npm") {
              steps {
-                 sh 'apt install npm' 
+                 sh 'apt install Node.js ' 
+                 sh 'apt install npm '
+                 sh 'Node.js -v && npm --version'
                  sh 'npm install -g heroku'
             }
-        }
-        
-         
+        }   
         stage('Deploy to Heroku') {
             steps {
                 // Utilisez l'outil Heroku CLI pour vous connecter à Heroku (si ce n'est pas déjà fait)
