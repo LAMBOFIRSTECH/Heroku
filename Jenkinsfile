@@ -8,20 +8,9 @@ pipeline {
      
             }
         }
-        stage('create folder') {
-            steps {
-                sh 'mkdir lab0 '
-            }
-        }
-
-        stage('create file') {
-             steps {
-                 sh 'cd lab0/ && touch web_site.html' 
-            }
-        }
         stage("creation de l'image docker") {
              steps {
-                 sh 'docker build -t nginx .' 
+                 sh 'docker build --no-cache -t arturlambodocker/nginx_web .' 
             }
         }
     }
