@@ -1,7 +1,7 @@
 FROM nginx:stable-bullseye
 LABEL MAINTAINER=Artur
 COPY nginx.conf /etc/nginx/conf.d/default.conf
-COPY source.list /etc/apt/sources.list
+# COPY source.list /etc/apt/sources.list
 RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y nano && \
